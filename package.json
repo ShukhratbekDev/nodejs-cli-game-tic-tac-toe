@@ -4,8 +4,11 @@
   "description": "A command line tic-tac-toe game in Node.js",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "keywords": [
     "tic-tac-toe",
@@ -15,6 +18,14 @@
   "author": "Shukhratbek Mamadaliev",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "eslint": "^8.56.0",
+    "jest": "^26.6.3",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^27.6.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.3"
   }
 }
